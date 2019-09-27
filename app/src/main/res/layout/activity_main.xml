@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <SeekBar
+        android:id="@+id/sb_Red"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:max="255"
+        android:progress="0"
+        android:layout_marginTop="50dp"
+        />
+    <SeekBar
+        android:id="@+id/sb_Green"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/sb_Red"
+        android:layout_centerHorizontal="true"
+        android:max="255"
+        android:progress="0"
+        />
+    <SeekBar
+        android:id="@+id/sb_Blue"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/sb_Green"
+        android:layout_centerHorizontal="true"
+        android:max="255"
+        android:progress="0"
+        />
+
+    <TextView
+        android:id="@+id/tv_Red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red : "
+        android:textSize="30dp"
+        android:layout_below="@+id/sb_Blue"
+        />
+    <TextView
+        android:id="@+id/tv_Green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green : "
+        android:layout_below="@+id/tv_Red"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:id="@+id/tv_Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue : "
+        android:layout_below="@+id/tv_Green"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_Red_Szam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:layout_toRightOf="@+id/tv_Red"
+        android:layout_below="@+id/sb_Blue"
+        />
+    <TextView
+        android:id="@+id/tv_Green_Szam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:layout_toRightOf="@+id/tv_Green"
+        android:layout_below="@+id/tv_Red_Szam"
+        />
+    <TextView
+        android:id="@+id/tv_Blue_Szam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:layout_toRightOf="@+id/tv_Blue"
+        android:layout_below="@+id/tv_Green_Szam"
+        />
+    <View
+        android:id="@+id/v_hatter_szin"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:layout_marginBottom="170dp"
+        />
+    <TextView
+        android:id="@+id/tv_szin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(0,0,0)"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:layout_marginBottom="250dp"
+        />
+
+
+
+</RelativeLayout>
